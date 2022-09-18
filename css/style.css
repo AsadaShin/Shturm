@@ -29,6 +29,7 @@ li {
 
 a {
     text-decoration: none;
+    color: #000000;
 }
 
 .button {
@@ -43,10 +44,6 @@ a {
     width: 100%;
     margin: 0 auto;
     padding: 0 15px;
-}
-
-.stages-section {
-    padding: 120px 0;
 }
 
 .section-title {
@@ -147,7 +144,7 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-image: url("/images/background1.webp");
+    background-image: url("../images/background1.webp");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -225,7 +222,7 @@ a {
 
 .stages {
     color: #000000;
-
+    padding: 120px 0;
 }
 
 .stages__inner {
@@ -311,6 +308,79 @@ a {
     line-height: 25px;
     color: rgba(0, 0, 0, .7);
 }
+
+/* SERVICES */
+
+.services {
+    padding: 120px 0;
+}
+
+.services__inner {
+    text-align: center;
+    color: #000000;
+}
+
+.services__title.section-title {
+    margin-bottom: 64px;
+}
+
+.services__cards {
+    display: flex;
+    flex: 1 0 100%;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+
+.services__card {
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+    padding: 0 15px;
+    width: 100%;
+}
+
+.services__card-box {
+    margin-bottom: 40px;
+}
+
+.services__card-img__box {
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 24px;
+}
+
+.services__card-img__box img {
+    height: 100%;
+    width: 100%;
+    object-fit: inherit;
+    border-radius: inherit;
+}
+
+.services__card-name {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.services__card-price {
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    color: rgba(229, 127, 73, 1);
+}
+
+.services__card-link a {
+    color: #ffffff;
+    padding: 15px 31px;
+    border-radius: 6px;
+    background-color: rgba(229, 127, 73, 1);
+    transition: all linear .3s;
+}
+
+.services__card-link a:hover {
+    box-shadow: 0 0 15px rgba(229, 127, 73, 1);
+}
+
 
 @keyframes animate {
     0% {
