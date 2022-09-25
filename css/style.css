@@ -579,6 +579,7 @@ a {
     font-size: 42px;
     margin-bottom: 15px;
 }
+
 .consultation__info-subtitle {
     color: rgba(255, 255, 255, 0.7);
 
@@ -590,6 +591,36 @@ a {
     padding: 18px 20px;
     background: transparent;
     border: 3px solid #ffffff;
+}
+
+/* STATISTIC */
+
+.statistic {
+    padding: 80px 0;
+    background: #252525;
+}
+
+.statistic__title {
+    font-size: 42px;
+    margin-bottom: 40px;
+}
+
+.statistic-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.statistic__list-item__num {
+    display: block;
+    font-size: 70px;
+    color: rgba(58, 187, 81, 1);
+    margin-bottom: 5px;
+}
+
+.statistic__list-item__desc {
+    font-size: 16px;
+    color: rgba(255, 255, 255, .7);
 }
 
 @keyframes animate {
