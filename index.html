@@ -9,9 +9,12 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/slick.css">
+    <link rel="stylesheet" href="./css/jquery.fancybox.min.css">
     <link rel="stylesheet" href="./css/style.css">
-
 </head>
 
 <body>
@@ -29,7 +32,27 @@
                     <ul class="nav__list">
                         <li class="nav__list-item">
                             <a class="nav__list-item__link" href="#">
-                                Наши проекты
+                                О нас
+                            </a>
+                        </li>
+                        <li class="nav__list-item">
+                            <a class="nav__list-item__link" href="#">
+                                Портфолио
+                            </a>
+                        </li>
+                        <li class="nav__list-item">
+                            <a class="nav__list-item__link" href="#">
+                                Этапы работ
+                            </a>
+                        </li>
+                        <li class="nav__list-item">
+                            <a class="nav__list-item__link" href="#">
+                                Статистика
+                            </a>
+                        </li>
+                        <li class="nav__list-item">
+                            <a class="nav__list-item__link" href="./services.html">
+                                Услуги
                             </a>
                         </li>
                         <li class="nav__list-item">
@@ -38,14 +61,9 @@
                             </a>
                         </li>
                         <li class="nav__list-item">
-                            <a class="nav__list-item__link tel" href="#">
-                                +7-926-091-84-97
-                            </a>
-                        </li>
-                        <li class="nav__list-item">
-                            <a class="nav__list-item__link button" href="#">
+                            <button class="nav__list-item__btn js-open-modal button" type="button" data-modal="order">
                                 Оставить заявку
-                            </a>
+                            </button>
                         </li>
                     </ul>
                 </nav>
@@ -67,7 +85,7 @@
                     <a class="intro__link" href="#">
                         Смотреть проекты
                     </a>
-                    <a class="intro__link" href="#">
+                    <a class="intro__link js-open-modal" href="#" data-modal="order">
                         Оставить заявку
                     </a>
                 </div>
@@ -86,66 +104,6 @@
                         </g>
                     </svg>
                 </button>
-            </div>
-        </div>
-    </section>
-
-    <!-- STAGES -->
-    <section class="stages">
-        <div class="container">
-            <div class="stages__inner">
-                <h2 class="stages__title section-title">
-                    Этапы работ
-                </h2>
-                <p class="stages__subtitle section-subtitle">
-                    Качество исполнения всех работ вас приятно порадует.
-                </p>
-                <ul class="stages__list">
-                    <li class="stages__list-item">
-                        <div class="stages__list-num__box">
-                            <div class="stages__list-separate"></div>
-                            <div class="stages__list-number">1</div>
-                        </div>
-                        <div class="stages__list-content">
-                            <h4 class="stages__list-title">
-                                Замер и технический дизайн-проект
-                            </h4>
-                            <p class="stages__list-text">
-                                Бесплатный выезд специалиста, разработка проекта и сметы.
-                            </p>
-                        </div>
-                    </li>
-                    <li class="stages__list-item">
-                        <div class="stages__list-num__box">
-                            <div class="stages__list-separate"></div>
-                            <div class="stages__list-number">2</div>
-                        </div>
-                        <div class="stages__list-content">
-                            <h4 class="stages__list-title">
-                                Договор и <br> начало работ
-                            </h4>
-                            <p class="stages__list-text">
-                                После согласования объемов, сроков и предварительной сметы подписываем договор,
-                                выполняем все согласованные работы в указанные сроки.
-                            </p>
-                        </div>
-                    </li>
-                    <li class="stages__list-item">
-                        <div class="stages__list-num__box">
-                            <div class="stages__list-separate"></div>
-                            <div class="stages__list-number">3</div>
-                        </div>
-                        <div class="stages__list-content">
-                            <h4 class="stages__list-title">
-                                Сдача работ и <br> гарантия 5 лет
-                            </h4>
-                            <p class="stages__list-text">
-                                Уборка помещения и вывоз оборудования, оплата. Качественный ремонт и довольный клиент, а
-                                также гарантия 5 лет.
-                            </p>
-                        </div>
-                    </li>
-                </ul>
             </div>
         </div>
     </section>
@@ -262,63 +220,44 @@
         </div>
     </section>
 
-    <!-- SERVICES -->
-    <section class="services">
+    <!-- PORTFOLIO -->
+    <section class="portfolio">
         <div class="container">
-            <div class="services__inner">
-                <h2 class="services__title section-title">
-                    Услуги
+            <div class="portfolio__inner">
+                <h2 class="portfolio__title section-title">
+                    Наше портфолио
                 </h2>
-                <ul class="services__cards">
-                    <li class="services__card">
-                        <div class="services__card-box">
-                            <div class="services__card-img__box">
-                                <img src="./images/services/services-1.jpeg" alt="">
-                            </div>
-                            <h3 class="services__card-name">
-                                Дома для ПМЖ
-                            </h3>
-                            <span class="services__card-price">
-                                от 1 000 000 ₽
-                            </span>
-                            <div class="services__card-link">
-                                <a href="#">Подробнее</a>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="services__card">
-                        <div class="services__card-box">
-                            <div class="services__card-img__box">
-                                <img src="./images/services/services-2.webp" alt="">
-                            </div>
-                            <h3 class="services__card-name">
-                                Дома для ПМЖ
-                            </h3>
-                            <span class="services__card-price">
-                                от 1 000 000 ₽
-                            </span>
-                            <div class="services__card-link">
-                                <a href="#">Подробнее</a>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="services__card">
-                        <div class="services__card-box">
-                            <div class="services__card-img__box">
-                                <img src="./images/services/services-3.webp" alt="">
-                            </div>
-                            <h3 class="services__card-name">
-                                Дома для ПМЖ
-                            </h3>
-                            <span class="services__card-price">
-                                от 1 000 000 ₽
-                            </span>
-                            <div class="services__card-link">
-                                <a href="#">Подробнее</a>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
+                <p class="portfolio__subtitle section-subtitle">
+                    Дома, которые мы уже построили для наших клиентов.
+                </p>
+                <div class="portfolio-slider">
+                    <ul class="portfolio-slider__list">
+                        <li class="portfolio-slider__list-item">
+                            <a class="portfolio-slider__list-item__box" data-fancybox="gallery"
+                                href="./images/portfolio/portfolio-1.jpeg">
+                                <img class="portfolio-slider__list-item__img" src="./images/portfolio/portfolio-1.jpeg" alt="portfolio-1">
+                            </a>
+                        </li>
+                        <li class="portfolio-slider__list-item">
+                            <a class="portfolio-slider__list-item__box" data-fancybox="gallery"
+                                href="./images/portfolio/portfolio-2.jpeg">
+                                <img class="portfolio-slider__list-item__img" src="./images/portfolio/portfolio-2.jpeg" alt="portfolio-2">
+                            </a>
+                        </li>
+                        <li class="portfolio-slider__list-item">
+                            <a class="portfolio-slider__list-item__box" data-fancybox="gallery"
+                                href="./images/portfolio/portfolio-3.jpeg">
+                                <img class="portfolio-slider__list-item__img" src="./images/portfolio/portfolio-3.jpeg" alt="portfolio-3">
+                            </a>
+                        </li>
+                        <li class="portfolio-slider__list-item">
+                            <a class="portfolio-slider__list-item__box" data-fancybox="gallery"
+                                href="./images/portfolio/portfolio-4.jpeg">
+                                <img class="portfolio-slider__list-item__img" src="./images/portfolio/portfolio-4.jpeg" alt="portfolio-4">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>
@@ -335,47 +274,69 @@
                         Предлагаем подробнее обсудить вашу задачу по телефону и обдумать варианты её решения.
                     </p>
                 </div>
-                <button type="button" class="consultation__button button">
+                <button type="button" class="consultation__button js-open-modal button" data-modal="order">
                     Записаться на консультанцию
                 </button>
             </div>
         </div>
     </section>
 
-    <!-- PORTFOLIO -->
-    <section class="portfolio">
+    <!-- STAGES -->
+    <section class="stages">
         <div class="container">
-            <div class="portfolio__inner">
-                <h2 class="portfolio__title section-title">
-                    Наше портфолио
+            <div class="stages__inner">
+                <h2 class="stages__title section-title">
+                    Этапы работ
                 </h2>
-                <p class="portfolio__subtitle section-subtitle">
-                    Дома, которые мы уже построили для наших клиентов.
+                <p class="stages__subtitle section-subtitle">
+                    Качество исполнения всех работ вас приятно порадует.
                 </p>
-                <div class="portfolio-slider">
-                    <ul class="portfolio-slider__list">
-                        <li class="portfolio-slider__list-item">
-                            <div class="portfolio-slider__list-item__box">
-                                <img src="./images/portfolio/portfolio-1.jpeg" alt="portfolio-1">
-                            </div>
-                        </li>
-                        <li class="portfolio-slider__list-item">
-                            <div class="portfolio-slider__list-item__box">
-                                <img src="./images/portfolio/portfolio-2.jpeg" alt="portfolio-2">
-                            </div>
-                        </li>
-                        <li class="portfolio-slider__list-item">
-                            <div class="portfolio-slider__list-item__box">
-                                <img src="./images/portfolio/portfolio-3.jpeg" alt="portfolio-3">
-                            </div>
-                        </li>
-                        <li class="portfolio-slider__list-item">
-                            <div class="portfolio-slider__list-item__box">
-                                <img src="./images/portfolio/portfolio-4.jpeg" alt="portfolio-4">
-                            </div>
-                        </li>
-                    </ul>
-                </div>
+                <ul class="stages__list">
+                    <li class="stages__list-item">
+                        <div class="stages__list-num__box">
+                            <div class="stages__list-separate"></div>
+                            <div class="stages__list-number">1</div>
+                        </div>
+                        <div class="stages__list-content">
+                            <h4 class="stages__list-title">
+                                Замер и технический дизайн-проект
+                            </h4>
+                            <p class="stages__list-text">
+                                Бесплатный выезд специалиста, разработка проекта и сметы.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="stages__list-item">
+                        <div class="stages__list-num__box">
+                            <div class="stages__list-separate"></div>
+                            <div class="stages__list-number">2</div>
+                        </div>
+                        <div class="stages__list-content">
+                            <h4 class="stages__list-title">
+                                Договор и <br> начало работ
+                            </h4>
+                            <p class="stages__list-text">
+                                После согласования объемов, сроков и предварительной сметы подписываем договор,
+                                выполняем все согласованные работы в указанные сроки.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="stages__list-item">
+                        <div class="stages__list-num__box">
+                            <div class="stages__list-separate"></div>
+                            <div class="stages__list-number">3</div>
+                        </div>
+                        <div class="stages__list-content">
+                            <h4 class="stages__list-title">
+                                Сдача работ и <br> гарантия 5 лет
+                            </h4>
+                            <p class="stages__list-text">
+                                Уборка помещения и вывоз оборудования, оплата. Качественный ремонт и довольный клиент, а
+                                также гарантия 5 лет.
+                            </p>
+                        </div>
+                    </li>
+                </ul>
             </div>
         </div>
     </section>
@@ -417,8 +378,135 @@
         </div>
     </section>
 
-    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <!-- CONTACT -->
+    <div class="contact">
+        <div class="contact-info">
+            <div class="contact-info__inner">
+                <h3 class="contact-info__title">
+                    Контакты
+                </h3>
+                <div>
+                    <a class="contact-info__tel" href="#">
+                        +7 926 091 84 97
+                    </a>
+                </div>
+                <a class="contact-info__mail" href="#">
+                    storm-combat@yandex.ru
+                </a>
+                <p class="contact-info__work">
+                    Режим работы: <br>
+                    С <span>11:00</span> до <span>21:00</span> <br>
+                    Без выходных
+                </p>
+                <p class="contact-info__location">
+                    Московская область, <br> г. Жуковский, <br> ул. Кооперативная, дом 8
+                </p>
+                <ul class="contact-info__social">
+                    <li class="contact-info__social-item">
+                        <a class="contact-info__social-item__link" href="#">
+                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 455 455"
+                                style="enable-background:new 0 0 455 455;" xml:space="preserve">
+                                <g>
+                                    <path style="fill-rule:evenodd;clip-rule:evenodd;"
+                                        d="M0,0v455h455V0H0z M384.814,100.68l-53.458,257.136 c-1.259,6.071-8.378,8.822-13.401,5.172l-72.975-52.981c-4.43-3.217-10.471-3.046-14.712,0.412l-40.46,32.981 c-4.695,3.84-11.771,1.7-13.569-4.083l-28.094-90.351l-72.583-27.089c-7.373-2.762-7.436-13.171-0.084-16.003L373.36,90.959 C379.675,88.517,386.19,94.049,384.814,100.68z">
+                                    </path>
+                                    <path style="fill-rule:evenodd;clip-rule:evenodd;"
+                                        d="M313.567,147.179l-141.854,87.367c-5.437,3.355-7.996,9.921-6.242,16.068 l15.337,53.891c1.091,3.818,6.631,3.428,7.162-0.517l3.986-29.553c0.753-5.564,3.406-10.693,7.522-14.522l117.069-108.822 C318.739,149.061,316.115,145.614,313.567,147.179z">
+                                    </path>
+                                </g>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="contact-info__social-item">
+                        <a class="contact-info__social-item__link" href="#">
+                            <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 455.731 455.731"
+                                style="enable-background:new 0 0 455.731 455.731;" xml:space="preserve">
+                                <g>
+                                    <rect x="0" y="0" width="455.731" height="455.731"></rect>
+                                    <g>
+                                        <path style="fill:#252525;"
+                                            d="M68.494,387.41l22.323-79.284c-14.355-24.387-21.913-52.134-21.913-80.638 c0-87.765,71.402-159.167,159.167-159.167s159.166,71.402,159.166,159.167c0,87.765-71.401,159.167-159.166,159.167 c-27.347,0-54.125-7-77.814-20.292L68.494,387.41z M154.437,337.406l4.872,2.975c20.654,12.609,44.432,19.274,68.762,19.274 c72.877,0,132.166-59.29,132.166-132.167S300.948,95.321,228.071,95.321S95.904,154.611,95.904,227.488 c0,25.393,7.217,50.052,20.869,71.311l3.281,5.109l-12.855,45.658L154.437,337.406z">
+                                        </path>
+                                        <path style="fill:#252525;"
+                                            d="M183.359,153.407l-10.328-0.563c-3.244-0.177-6.426,0.907-8.878,3.037 c-5.007,4.348-13.013,12.754-15.472,23.708c-3.667,16.333,2,36.333,16.667,56.333c14.667,20,42,52,90.333,65.667 c15.575,4.404,27.827,1.435,37.28-4.612c7.487-4.789,12.648-12.476,14.508-21.166l1.649-7.702c0.524-2.448-0.719-4.932-2.993-5.98 l-34.905-16.089c-2.266-1.044-4.953-0.384-6.477,1.591l-13.703,17.764c-1.035,1.342-2.807,1.874-4.407,1.312 c-9.384-3.298-40.818-16.463-58.066-49.687c-0.748-1.441-0.562-3.19,0.499-4.419l13.096-15.15 c1.338-1.547,1.676-3.722,0.872-5.602l-15.046-35.201C187.187,154.774,185.392,153.518,183.359,153.407z">
+                                        </path>
+                                    </g>
+                                </g>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="contact-info__social-item">
+                        <a class="contact-info__social-item__link" href="#">
+                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 455 455"
+                                style="enable-background:new 0 0 455 455;" xml:space="preserve">
+                                <path style="fill-rule:evenodd;clip-rule:evenodd;"
+                                    d="M0,0v455h455V0H0z M341.098,251.727c10.445,10.19,21.49,19.784,30.865,31.049 c4.142,4.978,8.06,10.113,11.046,15.881c4.239,8.264,0.397,17.318-6.985,17.817l-45.875-0.02 c-11.841,0.973-21.277-3.801-29.235-11.902c-6.328-6.45-12.243-13.354-18.352-20.023c-2.486-2.746-5.115-5.314-8.239-7.362 c-6.267-4.061-11.703-2.828-15.285,3.699c-3.643,6.649-4.499,14.031-4.835,21.435c-0.499,10.807-3.76,13.634-14.607,14.154 c-23.208,1.075-45.218-2.451-65.659-14.134c-18.052-10.307-32.022-24.879-44.184-41.356 c-23.702-32.124-41.855-67.391-58.154-103.673c-3.684-8.177-0.993-12.559,7.999-12.717c14.99-0.296,29.974-0.26,44.943-0.02 c6.089,0.102,10.129,3.582,12.458,9.334c8.101,19.906,18.01,38.85,30.448,56.427c3.327,4.677,6.71,9.334,11.504,12.636 c5.314,3.663,9.375,2.466,11.881-3.485c1.595-3.78,2.293-7.8,2.629-11.841c1.192-13.833,1.335-27.681-0.718-41.473 c-1.274-8.621-6.149-14.195-14.745-15.825c-4.382-0.836-3.725-2.446-1.615-4.958c3.704-4.315,7.189-7.006,14.093-7.006h51.847 c8.177,1.595,10.011,5.278,11.122,13.497l0.041,57.619c-0.097,3.184,1.595,12.615,7.306,14.704 c4.575,1.513,7.622-2.171,10.368-5.075c12.417-13.176,21.277-28.756,29.194-44.877c3.505-7.087,6.532-14.449,9.477-21.817 c2.17-5.452,5.553-8.137,11.703-8.04l49.916,0.061c1.472,0,2.986,0,4.438,0.239c8.396,1.452,10.705,5.075,8.096,13.293 c-4.076,12.875-12.06,23.625-19.84,34.391c-8.341,11.525-17.216,22.647-25.495,34.233 C331.087,237.201,331.683,242.535,341.098,251.727z">
+                                </path>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="contact-map">
+            <iframe
+                src="https://yandex.ru/map-widget/v1/?um=constructor%3Ae6ab02432f8724b404b4a24408ebe6e1525ce271966d5e258d73393093fe4007&amp;source=constructor"
+                width="100%" height="500" frameborder="0"></iframe>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p class="footer__copyright">
+            &#169; ООО"Штурм" 2012—2022
+        </p>
+    </footer>
+
+    <!-- MODAL -->
+    <div class="modal js-modal" data-modal="order">
+        <button class="close__btn js-close-modal button" type="button">
+            <svg id="Capa_1" style="fill: #ffffff;" enable-background="new 0 0 511.058 511.058"
+                viewBox="0 0 511.058 511.058" xmlns="http://www.w3.org/2000/svg">
+                <g>
+                    <path
+                        d="m511.058 60.811-60.811-60.811-194.718 194.718-194.718-194.718-60.811 60.811 194.718 194.718-194.718 194.718 60.811 60.811 194.718-194.718 194.718 194.718 60.811-60.811-194.718-194.718z" />
+                </g>
+            </svg>
+        </button>
+        <div class="modal__inner">
+            <div class="modal__img">
+                <img src="./images/modal-img.jpg" alt="">
+            </div>
+            <div class="modal__box">
+                <h3 class="modal__title">
+                    Оставить заявку
+                </h3>
+                <p class="modal__subtitle">
+                    Введите данные для того, чтобы оставить заявку
+                </p>
+                <form class="modal__form" action="#">
+                    <input class="modal__form-input" type="text" placeholder="Имя">
+                    <input class="modal__form-input" type="text" placeholder="Телефон">
+                    <input class="modal__form-input" type="text" placeholder="E-mail">
+                    <p class="modal__processing">
+                        <span>*</span> Я даю согласие на обработку моих <a href="#">персональных данных</a>
+                    </p>
+                    <button class="modal__btn button" type="submit">
+                        Отправить
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="overlay"></div>
+
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="./js/slick.min.js"></script>
+    <script type="text/javascript" src="./js/jquery.fancybox.min.js"></script>
     <script type="text/javascript" src="./js/main.js"></script>
 
 </body>
